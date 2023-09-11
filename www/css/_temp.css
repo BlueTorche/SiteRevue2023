@@ -1,0 +1,255 @@
+/* --------------------------------------- Body -------------------------------------------- */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: black;
+    background-image: radial-gradient(
+            rgba(0, 150, 0, 0.45), black 120%
+    );
+    height: 100vh;
+}
+
+body,i {
+    color: white;
+    font: 0.9rem Inconsolata, monospace;
+    text-shadow: 0 0 2px #C8C8C8;
+}
+
+::selection {
+    background: #0080FF;
+    text-shadow: none;
+}
+
+a { color: inherit; }
+
+
+/* --------------------- CAROUSEL ------------------- */
+
+.carousel{
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top:50%;
+    z-index: 2;
+    color: rgba(255,255,255,.5);
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0,.1);
+}
+.carousel-button:hover, .carousel-button:focus {
+    color:white;
+    background-color: rgba(0,0,0,.2);
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+
+/*
+
+/* ------------------------------        Navbar --------------------------------------
+
+.navbar-custom
+{
+    font-family: 'Arial', sans-serif;
+    color:grey;
+    font-size: 100px;
+    margin: 0px;
+    font-size: 25px !important;
+}
+
+/* ------------------------------------------------------------------- Content ------------------------------------------------------------------- */
+/* ------------------- Text Frame -------------------
+.frame{
+    border-style:solid;
+    border-color:#F1F1F1;
+    height: auto;
+}
+
+.frame-text{
+    font-size: 1rem;
+}
+
+/* ---------------------- Image --------------------- */
+
+.centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* --------------------------------------------------------------- Accordion ---------------------------------------------------------------
+/* Style the buttons that are used to open and close the accordion panel
+.accordion {
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border:2px solid grey;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover)
+.active, .accordion:hover {
+    border: 2px solid white;
+}
+
+/* Style the accordion panel. Note: hidden by default
+.panel {
+    color: inherit;
+    background: transparent;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    border: 2px solid grey;
+}
+
+/* --------------------------------------------------------------- Fluid grid layout -----------------------------------------------
+.wf-container1,.wf-container2 { margin: 0 auto; }
+
+.wf-container1:before,
+.wf-container1:after,
+.wf-container2:before,
+.wf-container2:after{
+    content: '';
+    display: table;
+}
+
+.wf-container1:after,.wf-container2:after  { clear: both; }
+
+.wf-box1,.wf-box2 { margin: 10px; }
+
+.wf-box1 img,.wf-box2 img  {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom-width: 0;
+}
+
+.wf-box1 .content,.wf-box2 .content  {
+    border: 1px solid #ccc;
+    border-top-width: 0;
+    padding: 5px 8px;
+}
+
+.wf-column { float: left; }
+
+/* --------------------------------------------------------------- Blurred popup ---------------
+.popup{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    padding: 5%;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.popup.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 0.99;
+    transition: 0.5s;
+}
+
+
+
+
+/* --------------------------------------------------------------- MEDIA -------------------------------------------------------
+
+@media screen and (min-width: 768px) {
+    .wf-container { width: 750px; }
+}
+
+@media screen and (min-width: 992px) {
+    .wf-container { width: 970px; }
+
+    .frame-text{
+        font-size: 1.5rem;
+    }
+
+    body,i {
+        font: 1.1rem Inconsolata, monospace;
+    }
+
+    .popup{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wf-container { width: 1170px; }
+
+    .frame-text{
+        font-size: 2rem;
+    }
+
+    body,i {
+        font: 1.3rem Inconsolata, monospace;
+    }
+
+    .popup{
+        width: 70%;
+    }
+
+}*/

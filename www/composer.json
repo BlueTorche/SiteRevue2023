@@ -1,0 +1,13 @@
+{
+    "require": {
+        "stripe/stripe-php": "^10.5",
+        "nyholm/psr7": "^1.5",
+        "nyholm/psr7-server": "^1.0",
+        "phpmailer/phpmailer": "^6.7",
+        "ext-imagick": "*"
+    },
+    "autoload": {
+        "psr-4": {"App\\": "src/"},
+        "files": ["config.php"]
+    }
+}

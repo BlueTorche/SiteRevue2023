@@ -1,0 +1,5 @@
+<?php
+const STRIPE_PUBLIC = 'pk_live_51MazuDEJ7VfNW732WaEiilknjYWuCgwjR7Ox8Za1LwuuO3rAyx7MF8z6dh0yaS3zwNG104rWPC4XIqrqK2LEVld400f5BL5EEm';
+const STRIPE_SECRET = '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';
+const WEBHOOK_SECRET = 'whsec_Mh7Y6meONr9NT0pwhFcoliuCF4EWvJvF';
+?>
